@@ -6,7 +6,12 @@ $(document).ready(function() {
     var result = url + search;
     console.log(result);
     $('#player').attr('src', result);
-    $('#resultURL').text('URL: '+result);
+    $('#directURL').text('Direct link: '+result);
+    $('#resultURL').text('Search result: '+"https://www.youtube.com/results?search_query="+search);
+
+    $('#directURL1').attr('href', result);
+    $('#resultURL1').attr('href', "https://www.youtube.com/results?search_query="+search);
+    
   });
 
 

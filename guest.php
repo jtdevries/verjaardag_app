@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Validate</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="assets/scss/main.css">
   </head>
   <body>
     <?php
@@ -40,7 +40,7 @@
       }
     ?>
 
-    <nav class="navbar navbar-dark bg-dark col-12">
+    <nav class="navbar navbar-dark col-12">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="validate.php">Guests</a>
@@ -69,36 +69,41 @@
           <h4>Song 1</h4>
             Artist: <input class="form-control" type="text" name="artist1"><br>
             Title: <input class="form-control" type="text" name="title1"><br>
-            URL: <input class="form-control" type="text" name="url1" required><br>
+            URL: <input class="form-control" type="text" name="url1"><br>
 
           <h4>Song 2</h4>
             Artist: <input class="form-control" type="text" name="artist2"><br>
             Title: <input class="form-control" type="text" name="title2"><br>
-            URL: <input class="form-control" type="text" name="url2" required><br>
+            URL: <input class="form-control" type="text" name="url2"><br>
 
           <h4>Song 3</h4>
             Artist: <input class="form-control" type="text" name="artist3"><br>
             Title: <input class="form-control" type="text" name="title3"><br>
-            URL: <input class="form-control" type="text" name="url3" required><br>
-
-            <button class="btn btn-primary" type="submit" name="submit">Submit</button><br>
+            URL: <input class="form-control" type="text" name="url3"<br>
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="done" required>
+              <label class="form-check-label" for="done">This form is ready to be submitted</label>
+          </div>
+          <button class="btn btn-primary" type="submit" name="submit">Submit</button><br>
       </div>
-
 
       <div class="col-6">
         <form class="form-group col-12" action="index.html" method="post">
           <h4>Youtube search</h4>
-            <iframe  id="player" type="text/html" width="640" height="380"
+            <iframe class="col-12"  id="player" type="text/html" width="640" height="380"
             src="http://www.youtube.com/embed?listType=search&list="
             frameborder="0"></iframe><br>
-            <input class="form-control col-12" type="text" name="searchYT" id="searchYT">
-            <h5 id="resultURL">Link: </h5>
-            <button class="btn btn-secondary" name="search" id="search">Search</button>
+            <input class="form-control col-12" type="text" name="searchYT" id="searchYT" placeholder="enter artist - song name">
+            <h6 id="directURL">Direct link: </h6>
+            <a id="directURL1" href="#" target="_blank">link</a>
+            <h6 id="resultURL">Search result: </h6>
+            <a id="resultURL1" href="#" target="_blank">link</a><br>
+            <button class="btn btn-secondary" name="search" id="search" type="button">Search</button>
+
         </form>
       </div>
 
     </div>
-
 
     <script src="assets/js/jquery-2.2.4.js"></script>
     <script src="assets/js/main.js"></script>
