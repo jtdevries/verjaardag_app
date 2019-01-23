@@ -93,7 +93,7 @@
             <iframe class="col-12"  id="player" type="text/html" width="640" height="380"
             src="http://www.youtube.com/embed?listType=search&list="
             frameborder="0"></iframe><br>
-            <input class="form-control col-12" type="text" name="searchYT" id="searchYT" placeholder="enter artist - song name">
+            <input class="form-control col-12" type="text" name="searchYT" id="searchYT" placeholder="Search: artist - song">
             <h6 id="directURL">Direct link: </h6>
             <a id="directURL1" href="#" target="_blank">link</a>
             <h6 id="resultURL">Search result: </h6>
