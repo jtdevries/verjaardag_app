@@ -25,13 +25,13 @@
               <div class="jumbotron col-4">
 
                   <h6>Username: </h6>
-                  <p><?php echo $song['Username']; ?></p>
+                  <p><?php echo $song['username']; ?></p>
                   <h6>E-mail: </h6>
-                  <p><?php echo $song['E-mail']; ?></p>
+                  <p><?php echo $song['email']; ?></p>
                   <h6>Personal message: </h6>
-                  <p><?php echo $song['Personal message']; ?></p><br><br>
+                  <p><?php echo $song['personalmessage']; ?></p><br><br>
 
-                <a class="btn btn-secondary" href="post.php?ID=<?php echo $song['ID']; ?>">Read more</a>
+                <a class="btn btn-secondary" href="post.php?id=<?php echo $song['id']; ?>">Read more</a>
 
               </div>
             <?php endforeach; ?>
