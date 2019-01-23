@@ -1,54 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Validate</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/scss/main.css">
-  </head>
-  <body>
-    <?php
-      //MESSAGE VARS
-      $smg = '';
-      $msgClass = '';
-      //CHECK FOR SUBMIT
-      if(filter_has_var(INPUT_POST, submit)){
-          //GET FORM DATA
-          $username = htmlspecialchars($_POST['username']);
-          $mail = htmlspecialchars($_POST['mail']);
-          $message = htmlspecialchars($_POST['message']);
+<?php
+  //MESSAGE VARS
+  $smg = '';
+  $msgClass = '';
+  //CHECK FOR SUBMIT
+  if(filter_has_var(INPUT_POST, submit)){
+      //GET FORM DATA
+      $username = htmlspecialchars($_POST['username']);
+      $mail = htmlspecialchars($_POST['mail']);
+      $message = htmlspecialchars($_POST['message']);
 
-          //CHECK REQUIRED FIELDS
-          if (!empty($username) && !empty($mail) && !empty($message)) {
-              //PASSED
-              //CHECK MAIL
-              if(filter_var($mail, FILTER_VALIDATE_EMAIL) === false){
-                  //FAILED
-                  $msg = 'Please use a valid E-mail';
-                  $msgClass = 'alert-danger';
-              } else {
-                  //PASSED
-                  $msg = 'Form has been submitted';
-                  $msgClass = 'alert-success';
-                  //echo 'Form has been submitted';
-              }
+      //CHECK REQUIRED FIELDS
+      if (!empty($username) && !empty($mail) && !empty($message)) {
+          //PASSED
+          //CHECK MAIL
+          if(filter_var($mail, FILTER_VALIDATE_EMAIL) === false){
+              //FAILED
+              $msg = 'Please use a valid E-mail';
+              $msgClass = 'alert-danger';
           } else {
-            //FAILED
-            $msg = 'Please fill in all fields';
-            $msgClass = 'alert-danger';
+              //PASSED
+              $msg = 'Form has been submitted';
+              $msgClass = 'alert-success';
+              //echo 'Form has been submitted';
           }
+      } else {
+        //FAILED
+        $msg = 'Please fill in all fields';
+        $msgClass = 'alert-danger';
       }
-    ?>
+  }
+?>
 
-    <nav class="navbar navbar-dark col-12">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="validate.php">Guests</a>
-          <a class="navbar-brand" href="validate.php">Admin</a>
-        </div>
-      </div>
-    </nav>
-
+<?php include('inc/header.php'); ?>
     <div class="container row col-12">
       <div class="col-6">
         <?php if($msg != ''): ?>
@@ -102,10 +85,5 @@
 
         </form>
       </div>
-
     </div>
-
-    <script src="assets/js/jquery-2.2.4.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<?php include('inc/footer.php'); ?>
