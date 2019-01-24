@@ -8,7 +8,6 @@
 
 
 ## To-do
-#### Captcha
-#### admin Login
-#### personal messages in Addpost page
-#### front page
+#### Captcha + login on index.php linking to addpost.php
+#### adminlogin.php page with password linking to admin.php
+#### personal messages list in addpost.php page for the guessts to see ?
