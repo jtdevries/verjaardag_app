@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.submitbtn {
+  margin-bottom: 20px;
+}
+
+.container {}
+
+.frontpage {}
+
+.pmwrapper {
+  height: 200px;
+}
+
+.pm {
+  height: 200px;
+  overflow: scroll;
+}

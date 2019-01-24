@@ -29,7 +29,10 @@
                   <h6>E-mail: </h6>
                   <p><?php echo $song['email']; ?></p>
                   <h6>Personal message: </h6>
-                  <p><?php echo $song['personalmessage']; ?></p><br><br>
+                  <div class="pmwrapper">
+                    <p class="pm"><?php echo $song['personalmessage']; ?></p><br><br>
+                  </div>
+
 
                 <a class="btn btn-secondary" href="post.php?id=<?php echo $song['id']; ?>">Read more</a>
 

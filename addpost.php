@@ -32,62 +32,80 @@
 ?>
 
 <?php include('inc/header.php'); ?>
-        <div class="container">
-          <h1>Add Posts</h1>
-            <form class="" action="<?php $_SERVER['PHP_SELF'];?>" method="post">
-              <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>E-mail</label>
-                <input type="text" name="email" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Personal message</label>
-                <textarea type="text" name="personalmessage" class="form-control"></textarea>
-              </div>
+        <div class="container row col-12">
+          <div class="form col-6">
+            <h1>Add Posts</h1>
+              <form class="" action="<?php $_SERVER['PHP_SELF'];?>" method="post">
+                <div class="form-group">
+                  <label>Username</label>
+                  <input type="text" name="username" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>E-mail</label>
+                  <input type="text" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Personal message</label>
+                  <textarea type="text" name="personalmessage" class="form-control"></textarea>
+                </div>
 
-              <div class="form-group">
-                <label>Artist 1</label>
-                <input type="text" name="artist1" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Song 1</label>
-                <input type="text" name="song1" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>URL 1</label>
-                <input type="text" name="url1" class="form-control">
-              </div>
+                <div class="form-group">
+                  <label>Artist 1</label>
+                  <input type="text" name="artist1" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Song 1</label>
+                  <input type="text" name="song1" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>URL 1</label>
+                  <input type="text" name="url1" class="form-control">
+                </div>
 
-              <div class="form-group">
-                <label>Artist 2</label>
-                <input type="text" name="artist2" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Song 2</label>
-                <input type="text" name="song2" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>URL 2</label>
-                <input type="text" name="url2" class="form-control">
-              </div>
+                <div class="form-group">
+                  <label>Artist 2</label>
+                  <input type="text" name="artist2" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Song 2</label>
+                  <input type="text" name="song2" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>URL 2</label>
+                  <input type="text" name="url2" class="form-control">
+                </div>
 
-              <div class="form-group">
-                <label>Artist 3</label>
-                <input type="text" name="artist3" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>Song 3</label>
-                <input type="text" name="song3" class="form-control">
-              </div>
-              <div class="form-group">
-                <label>URL 3</label>
-                <input type="text" name="url3" class="form-control">
-              </div>
+                <div class="form-group">
+                  <label>Artist 3</label>
+                  <input type="text" name="artist3" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Song 3</label>
+                  <input type="text" name="song3" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>URL 3</label>
+                  <input type="text" name="url3" class="form-control">
+                </div>
 
-              <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary"><br><br><br>
+              </form>
+          </div>
+          <div class="col-6">
+            <form class="form-group col-12" action="index.html" method="post">
+              <h4>Youtube search</h4>
+                <iframe class="col-12"  id="player" type="text/html" width="640" height="380"
+                src="http://www.youtube.com/embed?listType=search&list="
+                frameborder="0"></iframe><br>
+                <input class="form-control col-12" type="text" name="searchYT" id="searchYT" placeholder="Search: artist - song">
+                <h6 id="directURL">Direct link: </h6>
+                <a id="directURL1" href="#" target="_blank">link</a>
+                <h6 id="resultURL">Search result: </h6>
+                <a id="resultURL1" href="#" target="_blank">link</a><br>
+                <button class="btn btn-secondary" name="search" id="search" type="button">Search</button>
+
+
             </form>
+          </div>
         </div>
 <?php include('inc/footer.php'); ?>

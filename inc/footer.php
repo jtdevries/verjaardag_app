@@ -1,8 +1,8 @@
-    <!-- <footer class="footer bg-dark mt-auto py-3">
+     <footer class="bg-dark">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">vrancken dirk@telenet.be - 0497789523</span>
       </div>
-    </footer> -->
+    </footer>
     <script src="assets/js/jquery-2.2.4.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
