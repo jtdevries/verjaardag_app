@@ -7,6 +7,7 @@
                     <label>Password</label>
                     <input type="text" name="password" class="form-control">
                     <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                    <a href="admin.php">temp link</a>
                 </div>
             </form>
         </div>

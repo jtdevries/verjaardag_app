@@ -13,10 +13,6 @@ footer{
   margin-bottom: 20px;
 }
 
-.container {}
-
-.frontpage {}
-
 .pmwrapper {
   height: 200px;
 }
@@ -24,4 +20,17 @@ footer{
 .pm {
   height: 200px;
   overflow: scroll;
+
+}
+
+.deletePost{
+ float: right;
+}
+
+.backPost {
+  float: left;
+}
+
+.createdAt {
+  opacity: 0.5;
 }

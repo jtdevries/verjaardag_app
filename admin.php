@@ -1,8 +1,9 @@
 <?php
     require('config/config.php');
     require('config/db.php');
+
     //CREATE QUERY
-    $query = 'SELECT * FROM Songs';
+    $query = 'SELECT * FROM Songs ORDER BY created_at DESC';
 
     //GET RESULT
     $result = mysqli_query($conn, $query);
@@ -20,6 +21,7 @@
 <?php include('inc/header.php'); ?>
         <div class="container">
           <h1>Posts</h1>
+          <a class="btn btn-success" href="Export.php"> Export To Excel </a>
           <div class="row col-12">
             <?php foreach($songs as $song) : ?>
               <div class="jumbotron col-4">
@@ -32,6 +34,7 @@
                   <div class="pmwrapper">
                     <p class="pm"><?php echo $song['personalmessage']; ?></p><br><br>
                   </div>
+                  <p class="createdAt">Created at: <?php echo $song['created_at']; ?></p>
 
 
                 <a class="btn btn-secondary" href="post.php?id=<?php echo $song['id']; ?>">Read more</a>

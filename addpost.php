@@ -103,7 +103,7 @@
                 <h6 id="resultURL">Search result: </h6>
                 <a id="resultURL1" href="#" target="_blank">link</a><br>
                 <button class="btn btn-secondary" name="search" id="search" type="button">Search</button>
-
+                <button class="btn btn-default" name="search" id="link" type="button">Get link</button>
 
             </form>
           </div>

@@ -7,6 +7,7 @@
                     <label>E-mail</label>
                     <input type="text" name="email" class="form-control">
                     <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                    <a href="addpost.php">temp link</a>
                 </div>
             </form>
         </div>
