@@ -20,6 +20,7 @@ footer{
 .pm {
   height: 200px;
   overflow: scroll;
+  overflow-x: hidden; 
 
 }
 

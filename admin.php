@@ -33,7 +33,7 @@
                   <h6>Personal message: </h6>
                   <div class="pmwrapper">
                     <p class="pm"><?php echo $song['personalmessage']; ?></p><br><br>
-                  </div>
+                  </div><br>
                   <p class="createdAt">Created at: <?php echo $song['created_at']; ?></p>
 
 
