@@ -49,13 +49,7 @@
                 <h6>Personal message: </h6>
                 <p><?php echo $song['personalmessage']; ?></p><br><br>
 
-                <h5>Song 1</h5>
-                <h6>Artist: </h6>
-                <p><?php echo $song['artist1']; ?></p>
-                <h6>Song: </h6>
-                <p><?php echo $song['song1']; ?></p>
-                <h6>URL: </h6>
-                <p><?php echo $song['url1']; ?></p>
+
               </div>
 
               <div class="col-6">
@@ -63,6 +57,14 @@
                     <input type="hidden" name="delete_id" value="<?php echo $song['id']; ?>">
                     <input type="submit" name="delete" value="Delete" class="deletePost btn btn-danger">
                 </form><br><br><br>
+
+                <h5>Song 1</h5>
+                <h6>Artist: </h6>
+                <p><?php echo $song['artist1']; ?></p>
+                <h6>Song: </h6>
+                <p><?php echo $song['song1']; ?></p>
+                <h6>URL: </h6>
+                <p><?php echo $song['url1']; ?></p>
 
                 <h5>Song 2</h5>
                 <h6>Artist: </h6>

@@ -1,4 +1,4 @@
-     <footer class="bg-dark">
+     <footer class="bg-light">
       <div class="container">
         <span class="text-muted">vrancken dirk@telenet.be - 0497789523</span>
       </div>
