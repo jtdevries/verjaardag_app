@@ -21,7 +21,7 @@
 <?php include('inc/header.php'); ?>
         <div class="container">
           <h1>Posts</h1>
-          <a class="btn btn-success" href="Export.php"> Export To Excel </a>
+          <a class="btn btn-success" href="export.php"> Export To Excel </a>
           <div class="row col-12">
             <?php foreach($songs as $song) : ?>
               <div class="jumbotron col-4">

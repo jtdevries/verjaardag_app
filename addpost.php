@@ -99,9 +99,10 @@
                 frameborder="0"></iframe><br>
                 <input class="form-control col-12" type="text" name="searchYT" id="searchYT" placeholder="Search: artist - song">
                 <h6 id="directURL">Direct link: </h6>
-                <a id="directURL1" href="#" target="_blank">link</a>
+                <a id="directURL1" href="#" target="_blank">link</a><br><br>
                 <h6 id="resultURL">Search result: </h6>
                 <a id="resultURL1" href="#" target="_blank">link</a><br>
+
                 <button class="btn btn-secondary" name="search" id="search" type="button">Search</button>
                 <button class="btn btn-default" name="search" id="link" type="button">Get link</button>
 
